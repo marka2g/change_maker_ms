@@ -43,17 +43,17 @@ end
 
 # modulo ony works when first num is larger that second,
 # otherwise, no remainder
-cs = [11, 9, 8, 5, 4, 1]
-cs.reject! do |coin_to_reject|
-puts("<@>" * 6)
- puts "coin_to_reject = #{coin_to_reject} in coins_set array -> #{cs}"
- cs.any? do |coin_to_test_against|
-   puts "coin_to_test_against = #{coin_to_test_against}"
-   if coin_to_reject < coin_to_test_against
-     puts "coin_to_reject = #{coin_to_reject} is less than coin_to_test_against = #{coin_to_test_against}"
-     coin_to_test_against % coin_to_reject == 0
-     puts "coin_to_test_against % coin_to_reject == #{coin_to_test_against % coin_to_reject}"
-     puts("<@>" * 6)
-   end
- end
-end
+# cs = [11, 9, 8, 5, 4, 1]
+# cs.reject! do |coin_to_reject|
+# puts("<@>" * 6)
+#  puts "coin_to_reject = #{coin_to_reject} in coins_set array -> #{cs}"
+#  cs.any? do |coin_to_test_against|
+#    puts "coin_to_test_against = #{coin_to_test_against}"
+#    if coin_to_reject < coin_to_test_against
+#      puts "coin_to_reject = #{coin_to_reject} is less than coin_to_test_against = #{coin_to_test_against}"
+#      coin_to_test_against % coin_to_reject == 0
+#      puts "coin_to_test_against % coin_to_reject == #{coin_to_test_against % coin_to_reject}"
+#      puts("<@>" * 6)
+#    end
+#  end
+# end

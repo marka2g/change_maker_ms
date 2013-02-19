@@ -99,24 +99,24 @@ end
 # factorial(4) => 24
 
 ## recursion with data structure that tracks the recursion level
-def allFactorials(n)
-  results = Array.new( [n == 0 ? 1 : n] )
-binding.pry
-  puts "BEFORE RECURSE - n = #{n} ||| results = #{results}"
-  doAllFactorials(n, results, 0)
-  puts "AFTER RECURSE - n = #{n} ||| results = #{results}"
-  return results
-end
+# def allFactorials(n)
+#   results = Array.new( [n == 0 ? 1 : n] )
+#   puts "BEFORE RECURSE - n = #{n} ||| results = #{results}"
+#   doAllFactorials(n, results, 0)
+#   puts "AFTER RECURSE - n = #{n} ||| results = #{results}"
+#   return results
+# end
 
-def doAllFactorials(n, results, level)
-  if n > 1
-    puts "IN RECURSE -> n = #{n} ||| level = #{level} ||| results = #{results}}"
-    results[level] = n * doAllFactorials(n -1, results, level + 1)
-    puts "results = #{results}"
-    return results[level]
-  else
-    return 1
-  end
-end
+# def doAllFactorials(n, results, level)
+#   if n > 1
+#     puts "IN RECURSE -> n = #{n} ||| level = #{level} ||| results = #{results}}"
+#   binding.pry
+#     results[level] = n * doAllFactorials(n -1, results, level + 1)
+#     puts "results = #{results}"
+#     return results[level]
+#   else
+#     return 1
+#   end
+# end
 
 # allFactorials(4) => 24, 6, 2]

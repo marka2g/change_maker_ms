@@ -14,17 +14,19 @@ require "colorize"
 # computed_solution_greedliy =ChangeMaker.greedily(14, [17, 11, 5, 4, 1])
 # puts "the result is #{computed_solution_greedliy}"
 
-computed_solution_dynamically =ChangeMaker.dynamically(15, [29, 17, 11, 8, 9 ,4, 5, 1])
+# computed_solution_dynamically =ChangeMaker.dynamically!(15, [29, 17, 11, 8, 9 ,4, 5, 1])
+# computed_solution_dynamically =ChangeMaker.dynamically!(15, [11, 10, 9, 8, 6, 5, 4, 2, 1])
+computed_solution_dynamically =ChangeMaker.dynamically!(39, [100, 25, 10, 5, 1])
 puts "the result is #{computed_solution_dynamically}"
 
 
 # ChangeMaker.greedily(27)
-# ChangeMaker.dynamically(27)
+# ChangeMaker.dynamically!(27)
 
 # ChangeMaker.greedily(14, [10, 7, 1])
-# ChangeMaker.dynamically(14, [10, 7, 1])
+# ChangeMaker.dynamically!(14, [10, 7, 1])
 
 # ChangeMaker.greedily(14, [17, 11, 5, 4, 1])
-# ChangeMaker.dynamically(14, [17, 11, 5, 4, 1])
+# ChangeMaker.dynamically!(14, [17, 11, 5, 4, 1])
 
 # binding.pry
